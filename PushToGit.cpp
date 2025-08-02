@@ -17,10 +17,10 @@ void PushToGit(string NAME){
 
     ifstream inp ("main.cpp");
     ifstream file;
-    file.open("C:/Users/BunDauMamTom/Documents/Code/LuyenCode2025/" + NAME + ".cpp");
+    file.open("./LuyenCode2025/" + NAME + ".cpp");
 
     if(!file){
-    	ofstream outCase ("C:/Users/BunDauMamTom/Documents/Code/LuyenCode2025/" + NAME + ".cpp");
+    	ofstream outCase ("./LuyenCode2025/" + NAME + ".cpp");
     	stringstream ss;
     	ss << inp.rdbuf();
     	outCase << ss.str();
