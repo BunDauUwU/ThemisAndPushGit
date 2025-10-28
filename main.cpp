@@ -13,7 +13,7 @@ using namespace std;
 #define        CNTBIT(x)  __builtin_popcountll(x)
 #define           ALL(v)  (v).begin(), (v).end()
 #define            FAST   cin.tie(nullptr) -> ios_base::sync_with_stdio(false);
-#define         OI(FILE)  if(FILE != ""){freopen(FILE".inp","r",stdin);freopen(FILE".out","w",stdout);}\
+#define         FILE(FILE)  if(FILE != ""){freopen(FILE".inp","r",stdin);freopen(FILE".out","w",stdout);}\
                           else{freopen("uwu.inp","r",stdin);freopen("uwu.out","w",stdout);}
 
 typedef        long long  ll;
@@ -54,5 +54,5 @@ struct TIME{~TIME(){cerr << "Time: " << 1.0 * clock() / CLOCKS_PER_SEC << " s.\n
 ///////////////////////
 
 Elaina {
-
+    FILE("")
 }
