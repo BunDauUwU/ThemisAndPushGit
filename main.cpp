@@ -12,9 +12,6 @@ using namespace std;
 #define        BIT(x, i)  ((x) >> (i) & 1)
 #define        CNTBIT(x)  __builtin_popcountll(x)
 #define           ALL(v)  (v).begin(), (v).end()
-#define            FAST   cin.tie(nullptr) -> ios_base::sync_with_stdio(false);
-#define         FILE(FILE)  if(FILE != ""){freopen(FILE".inp","r",stdin);freopen(FILE".out","w",stdout);}\
-                          else{freopen("uwu.inp","r",stdin);freopen("uwu.out","w",stdout);}
 
 typedef        long long  ll;
 typedef      long double  ld;
@@ -44,8 +41,15 @@ template<class X> struct compress{
     int operator() (X& a){ return lower_bound(ALL(c), a) - c.begin(); }
 };
 
-struct IO{IO(){cin.tie(nullptr) -> ios_base::sync_with_stdio(false);}}; static IO Setup;
+struct FAST{ FAST(){ cin.tie(nullptr) -> ios_base::sync_with_stdio(false);} }; static FAST fast;
 struct TIME{~TIME(){cerr << "Time: " << 1.0 * clock() / CLOCKS_PER_SEC << " s.\n";}}; TIME time_setup;
+struct IO{ IO(){
+        #ifdef ONLINE_JUDGE
+            if(ONLINE_JUDGE != "")freopen(ONLINE_JUDGE".inp","r",stdin);freopen(ONLINE_JUDGE".out","w",stdout);
+        #else
+            freopen("uwu.inp","r",stdin);freopen("uwu.out","w",stdout);
+        #endif
+}}; static IO run;
 
 ///////////////////////
 //.........../\__/\..//
@@ -53,6 +57,7 @@ struct TIME{~TIME(){cerr << "Time: " << 1.0 * clock() / CLOCKS_PER_SEC << " s.\n
 //.....[Blackcat!]<\.//
 ///////////////////////
 
-Elaina {
-    FILE("")
+Elaina{
+    //#define ONLINE_JUDGE ""
+
 }
